@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import instance from '@/lib/axios';
 import Image from 'next/image';
 import Head from 'next/head';
+import { notoSansKR } from '../_app';
 
 const labels = {
   rating: {
@@ -84,7 +85,7 @@ export default function Movie() {
       </div>
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>소개</h2>
-        <p className={styles.description}>{movie.description}</p>
+        <p className={`${styles.description} ${notoSansKR.className}`}>{movie.description}</p>
         <span className={styles.readMore}>더보기</span>
       </section>
       <div className={styles.reviewSections}>

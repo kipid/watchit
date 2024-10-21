@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/lib/ThemeContext';
 import Head from 'next/head';
 import { Noto_Sans_KR } from '@next/font/google';
 
-const notoSansKR = Noto_Sans_KR({
+export const notoSansKR = Noto_Sans_KR({
   weight: ['400', '700'],
   subsets: [],
 });
